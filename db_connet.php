@@ -11,16 +11,44 @@ $rows = $pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC); //fetchAll() 二維陣列
 // echo "<pre>";
 ?>
 <style>
-    table{
-        width: 50%;
+    /* 頁面整體背景與字型 */
+    body {
+        background: linear-gradient(to bottom right, #fdfbfa, #f8e9f0);
+        font-family: 'Segoe UI', sans-serif;
+        padding: 2rem;
+        color: #5f4b66;
+    }
+    /* 表格樣式 */
+    table {
+        width: 80%;
         border-collapse: collapse;
-        margin: 20px auto;
+        margin: 30px auto;
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #fef6fa;
+        box-shadow: 0 0 15px rgba(200, 160, 180, 0.1);
+        border-radius: 12px;
+        overflow: hidden;
     }
-    th,td{
-        border: 1px solid #ddd;
-        padding: 5px 12px;
+
+    th, td {
+        border: 1px solid #e8d9f1;
+        padding: 10px 15px;
         text-align: center;
+        color: #5f4b66;
     }
+
+    th {
+        background-color: #f8e9f0;
+        color: #5f4b66;
+    }
+     tr:nth-child(even) {
+        background-color: #fdfbfa;
+    }
+
+    tr:hover {
+        background-color: #f3e2ef;
+    }
+
 </style>
 <table>
     <tr>
@@ -46,27 +74,46 @@ $rows = $pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC); //fetchAll() 二維陣列
 </table>
 
 <style>
-.card{
-    width: 300px;
-    margin: 10px auto;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    display: inline-block;
+ /* 卡片樣式 */
+    .card {
+        width: 260px;
+        margin: 15px;
+        padding: 15px;
+        border-radius: 15px;
+        border: 1px solid #e8d9f1;
+        background-color: #fdfbfa;
+        box-shadow: 0 4px 10px rgba(200, 160, 180, 0.1);
+        display: inline-block;
+        vertical-align: top;
+        font-family: 'Segoe UI', sans-serif;
+        color: #5f4b66;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-}
-h3.head{
-    margin: 0;
-    padding: 0;
-    font-size: 1.2em;
-    padding-bottom: 5px;
-    margin-bottom: 5px;
-    border-bottom: 1px solid #ccc;
-}
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(200, 160, 180, 0.2);
+    }
 
-.card div:hover{
-    background-color: #f0f0f0;
-}
+    h3.head {
+        margin: 0 0 10px 0;
+        padding-bottom: 5px;
+        border-bottom: 2px dashed #d8c7d6;
+        font-size: 1.2em;
+        color: #7a5c86;
+    }
+
+    .card div {
+        margin: 5px 0;
+        padding: 5px 0;
+        background-color: #fef6fa;
+        border-radius: 8px;
+    }
+
+    .card div:hover {
+        background-color: #f3e2ef;
+    }
+
 </style>
 <?php 
 foreach($rows as $row){
