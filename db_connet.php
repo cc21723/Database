@@ -12,11 +12,17 @@ $rows = $pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC); //fetchAll() 二維陣列
 ?>
 <style>
     /* 頁面整體背景與字型 */
+    *{
+        clear: both;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
     body {
         background: linear-gradient(to bottom right, #fdfbfa, #f8e9f0);
         font-family: 'Segoe UI', sans-serif;
         padding: 2rem;
         color: #5f4b66;
+        width: 960px;
     }
     /* 表格樣式 */
     table {
@@ -76,7 +82,7 @@ $rows = $pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC); //fetchAll() 二維陣列
 <style>
  /* 卡片樣式 */
     .card {
-        width: 260px;
+        width: 20%;
         margin: 15px;
         padding: 15px;
         border-radius: 15px;
