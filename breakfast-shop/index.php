@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>恆食早午餐</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&family=Quicksand:wght@400;600&display=swap');
+        /* @import url('https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&family=Quicksand:wght@400;600&display=swap'); */
 
         body {
-            font-family: 'Quicksand', sans-serif;
+            font-family: '標楷體', sans-serif;
             background: linear-gradient(to bottom right, #fef6f9, #e3f4f3);
             margin: 0;
             padding: 2rem;
