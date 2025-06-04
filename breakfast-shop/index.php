@@ -28,6 +28,8 @@
             width: 100%;
             text-align: center;
             margin: 1.5rem 0;
+            display: flex;
+            justify-content: space-evenly;
         }
 
         .btns button,
@@ -100,6 +102,7 @@
 
     <div class="btns">
         <button><a href="add_item.php">➕ 新增品項</a></button>
+        <button><a href="sales_report.php">📊 銷售報表</a></button>
     </div>
 
     <table>
@@ -120,6 +123,7 @@
             </tr>
         <?php endforeach; ?>
     </table>
+
 
 </body>
 
