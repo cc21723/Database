@@ -30,7 +30,8 @@
             margin: 1.5rem 0;
         }
 
-        .btns button {
+        .btns button,
+        td a {
             background-color: #fce4ec;
             border: none;
             padding: 0.6rem 1.2rem;
@@ -40,7 +41,8 @@
             transition: all 0.3s ease;
         }
 
-        .btns button:hover {
+        .btns button:hover,
+        td a:hover {
             background-color: #f8bbd0;
             transform: scale(1.05);
         }
@@ -109,8 +111,11 @@
         <?php foreach ($items as $item): ?>
             <tr>
                 <td><?= $item['name']; ?></td>
-                <td>$<?= $item['price']; ?></td>
-                <td><a href='update_item.php?id=<?= $item['id']; ?>'>編輯</a></td>
+                <td><?= $item['price']; ?></td>
+                <td>
+                    <a href='update_item.php?id=<?= $item['id']; ?>'>編輯</a>
+                    <a href='./api/delete_item.php?id=<?= $item['id']; ?>'>刪除</a>
+                </td>
 
             </tr>
         <?php endforeach; ?>
