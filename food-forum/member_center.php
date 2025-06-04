@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <?php include 'header.php'; ?>
+    <main>
+        <h2>歡迎光臨，<?=$_SESSION['mem'];?></h2>
+    </main>
+    <?php include 'footer.php'?>
 </body>
 </html>

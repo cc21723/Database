@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        h1{
+        h1 {
             text-align: center;
         }
+
         /* 表單整體容器 */
         form {
             max-width: 400px;
@@ -89,6 +90,11 @@
             </div>
 
             <div>
+                <label for="birthday">生日：</label>
+                <input type="date" id="birthday" name="birthday" required>
+            </div>
+
+            <div>
                 <label for="email">電子郵件：</label>
                 <input type="email" id="email" name="email" required>
             </div>
@@ -101,11 +107,6 @@
             <div>
                 <label for="pw">密碼：</label>
                 <input type="password" id="pw" name="pw" required>
-            </div>
-
-            <div>
-                <label for="birthday">生日：</label>
-                <input type="date" id="birthday" name="birthday" required>
             </div>
 
             <div class="button-group">
