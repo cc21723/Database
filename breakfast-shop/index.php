@@ -45,7 +45,7 @@
             transform: scale(1.05);
         }
 
-        .btns button a {
+        a {
             text-decoration: none;
             color: #5c4b51;
         }
