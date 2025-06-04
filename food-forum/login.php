@@ -7,8 +7,6 @@
     <title>會員登入</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        body {}
-
         h1 {
             text-align: center;
             font-family: '標楷體', sans-serif;
